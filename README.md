@@ -1,10 +1,11 @@
 # hrext09-my-cruddy-app
 Create Read Update and Delete framework using JS
 
-This will be a text adventure game.
-Commands are entered via an input area and displayed in a list above.
-The game is updated with each new command and progress is tracked using variables.
-The delete part of CRUD will be more of a game reset.
+This mobile app 'Schnapsidy' pronounced schnaps-e-dee, which translates from German as 'liqour idea', prevents you from drunk texing/calling people.
+The MVP for this project is to:
+  1: Block yourself from texting or calling preselected contacts for a period of time.
+  2: Be unable to block emergency numbers, i.e. 911, poison control, etc.
+
 
  ## Tasks
 

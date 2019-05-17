@@ -2,3 +2,90 @@
   input boxes
   buttons
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  /* align-items: center; */
+  flex-direction: column;
+  background: #ffff97d5;
+}
+
+/* header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem 1rem 2rem;
+  height: 150px;
+  background: yellow;
+  border-bottom: 3px solid #333;
+}
+
+.header-left {
+  display: flex;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 4rem;
+  text-transform: capitalize;
+}
+
+/* logo */
+.fa-glass-martini-alt {
+  font-size: 70px;
+}
+
+/* form */
+form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  width: 80%;
+  background: lightblue;
+}
+
+input {
+  margin: .5rem;
+  width: 80vw;
+  height: 60px;
+  font-size: 2.5rem;
+  border: 2px solid #333;
+}
+
+/* buttons */
+.btns {
+  display: flex;
+  /* justify-content: flex-start; */
+  /* width: 100%; */
+  align-items: center;
+  height: 4rem;
+  font-size: 60px;
+  margin: 1rem 0;
+}
+
+.fa-plus, .fa-th-list {
+  display: grid;
+  place-items: center;
+  height: 90px;
+  width: 90px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  background: #fff;
+  outline: none;
+}
+
+.fa-plus:hover, .fa-th-list:hover {
+  cursor: pointer;
+}
+
+.fa-plus {
+  margin-right: 4rem;
+}
