@@ -1,6 +1,8 @@
 # hrext09-my-cruddy-app
 Create Read Update and Delete framework using JS
 
+note: the html files are meant to be viewed using the dev tools device toolbar.
+
 This mobile app 'Schnapsidy' pronounced schnaps-e-dee, which translates from German as 'liqour idea', prevents you from drunk texing/calling people.
 The MVP for this project is to:
   1: Block yourself from texting or calling preselected contacts for a period of time.
