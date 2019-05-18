@@ -1,0 +1,156 @@
+/* i used flex to for the widget layout here, but i'll refactor using grid later */
+
+.home-body {
+  background: linear-gradient(to right bottom, #2d2dff, #740074b2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* carrier, signal, batter, time */
+.top-info {
+  display: flex;
+  padding: .5rem;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* center widgets */
+.widgets {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  padding: 25rem 0 15rem 0;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather h3 {font-size: 10rem;}
+.weather p {font-size: 3rem;}
+.fa-cloud-sun {font-size: 5rem;}
+
+/* google search */
+.google-search {
+  display: flex;
+  align-items: center;
+  margin: 10rem 0 5rem 0;
+
+}
+
+.google-search input {
+  height: 100px;
+  padding: 0 1rem;
+  margin: 0;
+  border: none;
+  border-radius: 50px 0 0 50px;
+  font-size: 3rem;
+}
+
+.mag-glass {
+  display: grid;
+  place-items: center;
+  height: 100px;
+  width: 100px;
+  background: #fff;
+  border-radius: 0 50px 50px 0;
+  border: none;
+  font-size: 4rem;
+  color: black;
+}
+
+.top-right-info {
+  display: flex;
+  width: 250px;
+  justify-content: space-around;
+}
+
+/* bottom widgets */
+.widget {
+  display: grid;
+  place-items: center;
+  height: 100px;
+  width: 100px;
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 40px;
+  font-size: 4rem;
+  color: #fff;
+}
+
+/* schnapsidy, email */
+.middle-widgets {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.schnapsidy {
+  background: #ffff5d;
+  color: black;
+  font-family: 'Lobster', cursive;
+}
+
+.email {
+  background: #d941ff;
+}
+
+.bottom-widgets {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.widget-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+}
+
+/* phone, messages, contacts, chrome */
+.phone {background: #65c065;}
+.messages {background: #65aec0;}
+.contacts {background: #ff5151;}
+.chrome img {border-radius: 40px;}
+
+/* footer nav */
+.fa-square, .fa-arrow-left {
+  color: #fff;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 3rem;
+  width: 3rem;
+}
+
+.top-line {
+  width: 100%;
+  height: 40%;
+  border-bottom: 5px solid #fff;
+  border-right: 5px solid #fff;
+  border-bottom-right-radius: 5px;
+}
+
+.bottom-line {
+  padding-top: 5px;
+  width: 100%;
+  height: 40%;
+  border-top: 5px solid #fff;
+  border-left: 5px solid #fff;
+  border-top-left-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}

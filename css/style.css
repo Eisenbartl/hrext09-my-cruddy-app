@@ -32,7 +32,7 @@ body {
   display: flex;
 }
 
-h1 {
+.app-h1 {
   font-family: 'Lobster', cursive;
   font-size: 4rem;
   text-transform: capitalize;
@@ -88,4 +88,62 @@ input {
 
 .fa-plus {
   margin-right: 4rem;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  bottom: 0;
+  width: 100%;
+}
+
+.fa-square, .fa-arrow-left {
+  display: grid;
+  place-items: center;
+  height: 5rem;
+  width: 5rem;
+  font-size: 3rem;
+  /* background: pink;
+  border: 1px solid black; */
+  border-radius: 50%;
+}
+
+.fa-square:hover, .fa-arrow-left:hover {
+  background: #fff;
+  cursor: pointer;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 3rem;
+  width: 3rem;
+}
+
+.top-line {
+  width: 100%;
+  height: 40%;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom-right-radius: 5px;
+}
+
+.bottom-line {
+  padding-top: 5px;
+  width: 100%;
+  height: 40%;
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+  border-top-left-radius: 5px;
+}
+
+/* home link */
+a {
+  text-decoration: none;
+  color: black;
 }

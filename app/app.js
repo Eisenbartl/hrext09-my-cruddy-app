@@ -69,3 +69,13 @@ $(document).ready(function() {
     }
   });
 });
+
+// function checkContact(num) {
+//   if (num === 5551234) {
+//     console.log('you cannot text this person')
+//   } else {
+//     console.log('text sent');
+//   }
+// }
+
+// checkContact(5551235)

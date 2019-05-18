@@ -1,0 +1,38 @@
+.messages-body {
+  background: #fff;
+}
+
+.text-panel {
+  position: absolute;
+  bottom: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  background: #e9e9e9;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+/* Flex is being used to position the buttons but I think using grid would work better. will refactor later */
+
+button {
+  margin: .5rem .2rem;
+  width: 5.5rem;
+  font-size: 4rem;
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.space, .enter {width: auto;}
+
+.message-footer {
+  background: #f8f8f8;
+}
