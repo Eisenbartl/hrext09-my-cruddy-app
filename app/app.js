@@ -1,13 +1,3 @@
-/*
-
- ### Basic Reqs
-- [ ] Where to store data? (localstorage)
-- [ ] How to caputure data? (web form)
-- [ ] How to modify data? (update action, delete action)
-- [ ] How to view data? (style?)
-- [ ] UI/UX considerations (how are we going to use this)
-
-*/
 
 //localStorage interaction function
 //get item
@@ -52,11 +42,16 @@ $(document).ready(function() {
     var currentValue = $("#valueInput").val();
     if (keyExists(currentKey)) {
       //current key exists, do something error-handle-y
+      alert('This already exists');
     } else {
       createItem(currentKey, currentValue);
+      let getContact = $('<p></p>');
+      getContact.html(`turtle`);
+      getContact.appendTo('.contacts');
     }
   });
 
+  // add button
   $('#updateButton').click(function(event) {
     event.preventDefault();
 

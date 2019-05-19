@@ -47,20 +47,32 @@ body {
 form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-top: 4rem;
-  width: 80%;
+  width: 100%;
   background: lightblue;
 }
 
 input {
   margin: .5rem;
-  width: 80vw;
-  height: 60px;
-  font-size: 2.5rem;
+  width: 800px;
+  height: 80px;
+  font-size: 3rem;
   border: 2px solid #333;
 }
 
 /* buttons */
+.form-btns {
+  align-items: center;
+}
+
+.form-btns button {
+  margin: 0 2rem;
+  height: 70px;
+  width: 200px;
+  font-size: 3rem;
+}
+
 .btns {
   display: flex;
   /* justify-content: flex-start; */
@@ -88,6 +100,14 @@ input {
 
 .fa-plus {
   margin-right: 4rem;
+}
+
+/* contact do not call list */
+.contacts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 4rem;
 }
 
 /* footer */
