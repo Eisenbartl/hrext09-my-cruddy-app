@@ -1,5 +1,47 @@
+/* contacts */
+.aaron-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.aaron-header h3 {
+  padding: 0 4rem;
+  font-size: 4rem;
+}
+
 .messages-body {
   background: #fff;
+}
+
+/* text-area */
+.text-area {
+  background: #ffdbe1;
+  height: 940px;
+  width: 100%;
+}
+
+.text-input {
+  position: absolute;
+  top: 1050px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.send-box {
+  position: relative;
+  height: 5.5rem;
+  width: 5.5rem;
+  background: #b5e5a2;
+  font-size: 3.7rem;
+  border-radius: 50px;
+}
+
+.fa-paper-plane {
+  position: absolute;
+  left: 10%;
+  top: 20%;
 }
 
 .text-panel {

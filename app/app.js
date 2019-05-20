@@ -46,7 +46,7 @@ $(document).ready(function() {
     } else {
       createItem(currentKey, currentValue);
       let getContact = $('<p></p>');
-      getContact.html(`turtle`);
+      getContact.html(`${currentKey}`);
       getContact.appendTo('.contacts');
     }
   });
@@ -63,6 +63,11 @@ $(document).ready(function() {
       //current key doesnt exist, do stuff
     }
   });
+
+  $('.send-box').click(function() {
+    let textBox = $('.text-box');
+    console.log(textBox.val());
+  })
 });
 
 // function checkContact(num) {
