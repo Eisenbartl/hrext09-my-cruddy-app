@@ -33,7 +33,8 @@ var keyExists = function(key) {
 
 ///////////////////////////////////////////
 //event handlers for the buttons and ... possibly the inputboxes
-  //preventdefault on button clicks
+//preventdefault on button clicks
+//schnapsidy app section
 $(document).ready(function() {
   $('#createButton').click(function(event) {
     event.preventDefault();
@@ -64,18 +65,47 @@ $(document).ready(function() {
     }
   });
 
-  $('.send-box').click(function() {
+// messaging section
+  $('#contact').click(function() {
     let textBox = $('.text-box');
-    console.log(textBox.val());
-  })
+    let text = $('<p></p>');
+  for (let key in localStorage) {
+    if($(this).hasClass(localStorage[key])) {
+      text.html('<p>You are currently blocked from contacting this person. You\'re welcome. Sincerely, Schnapsidy</p>');
+      text.appendTo('.text-area');
+      textBox.val('');
+      console.log('class found');
+      break;
+    } else {
+      text.html(`${textBox.val()}`);
+      text.appendTo('.text-area');
+      textBox.val('');
+      console.log('class not found');
+      break;
+    } 
+  }
+})
+
 });
 
-// function checkContact(num) {
-//   if (num === 5551234) {
-//     console.log('you cannot text this person')
-//   } else {
-//     console.log('text sent');
+// $('#contact').click(function() {
+//   for (let key in localStorage) {
+//     if($('#contact').hasClass(localStorage[key])) {
+//       function x() {
+//         text.html('<p>You are currently blocked from contacting this person. You\'re welcome. Sincerely, Schnapsidy</p>');
+//         text.appendTo('.text-area');
+//         textBox.val('');
+//         console.log('class found');
+//       }
+//       return x();
+//     } else {
+//       function y() {
+//         text.html(`${textBox.val()}`);
+//         text.appendTo('.text-area');
+//         textBox.val('');
+//         console.log('class not found');
+//       }
+//       return y();
+//     } 
 //   }
-// }
-
-// checkContact(5551235)
+// })

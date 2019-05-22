@@ -16,9 +16,11 @@
 
 /* text-area */
 .text-area {
-  background: #ffdbe1;
   height: 940px;
   width: 100%;
+  font-size: 3rem;
+  overflow: scroll;
+  line-height: 1.5;
 }
 
 .text-input {
