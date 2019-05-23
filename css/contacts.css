@@ -1,5 +1,7 @@
 .contact-body {
+  padding: 0 4rem;
   background: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
@@ -7,5 +9,9 @@ h1 {
 }
 
 ul {
+  padding: 2rem 0;
   font-size: 3rem;
+  list-style: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }

@@ -1,4 +1,3 @@
-
 //localStorage interaction function
 //get item
 var getItem = function(key) {
@@ -7,12 +6,18 @@ var getItem = function(key) {
 
 //create
 var createItem = function(key, value) {
-  return window.localStorage.setItem(key, value);
+  if (value !== '911') {
+    return window.localStorage.setItem(key, value);
+  }
+  return alert('This number cannot be blocked!');
 }
 
 //update
 var updateItem = function(key, value) {
-  return window.localStorage.setItem(key, value);
+  if (value !== '911') {
+    return window.localStorage.setItem(key, value);
+  }
+  return alert(`Schnapsidy says 'My will shall not be circumvented! This number still cannot be blocked.'`)
 }
 
 //delete
@@ -69,22 +74,27 @@ $(document).ready(function() {
   $('#contact').click(function() {
     let textBox = $('.text-box');
     let text = $('<p></p>');
-  for (let key in localStorage) {
-    if($(this).hasClass(localStorage[key])) {
-      text.html('<p>You are currently blocked from contacting this person. You\'re welcome. Sincerely, Schnapsidy</p>');
-      text.appendTo('.text-area');
-      textBox.val('');
-      console.log('class found');
-      break;
-    } else {
+    // set default output action
+    let output = function() {
       text.html(`${textBox.val()}`);
       text.appendTo('.text-area');
       textBox.val('');
       console.log('class not found');
-      break;
-    } 
-  }
-})
+    }
+
+    // iterate through local storage for a class
+    for (let key in localStorage) {
+      if($(this).hasClass(localStorage[key])) {
+        output = function() {//reassign ouput response
+          text.html('<p>You are currently blocked from contacting this person. You\'re welcome. Sincerely, Schnapsidy</p>');
+          text.appendTo('.text-area');
+          textBox.val('');
+          console.log('class found');
+        }
+      }
+    }
+    output();
+  })
 
 });
 
