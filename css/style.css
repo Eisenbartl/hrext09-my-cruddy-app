@@ -50,7 +50,7 @@ form {
   align-items: center;
   padding-top: 4rem;
   width: 100%;
-  background: lightblue;
+  /* background: lightblue; */
 }
 
 input {
@@ -63,14 +63,19 @@ input {
 
 /* buttons */
 .form-btns {
-  align-items: center;
+  
 }
 
 .form-btns button {
   margin: 0 2rem;
-  height: 70px;
-  width: 200px;
+  height: 80px;
+  width: 366px;
   font-size: 3rem;
+  background: #494949;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .btns {

@@ -86,7 +86,7 @@ $(document).ready(function() {
     for (let key in localStorage) {
       if($(this).hasClass(localStorage[key])) {
         output = function() {//reassign ouput response
-          text.html('<p>You are currently blocked from contacting this person. You\'re welcome. Sincerely, Schnapsidy</p>');
+          text.html('<p>You are temporarily blocked from contacting this person. You\'re welcome. Sincerely, Schnapsidy</p>');
           text.appendTo('.text-area');
           textBox.val('');
           console.log('class found');

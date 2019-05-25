@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid black;
+  background: #f8f8f8;
 }
 
 .aaron-header h3 {
@@ -16,11 +17,17 @@
 
 /* text-area */
 .text-area {
+  padding: 0 2rem;
   height: 940px;
-  width: 100%;
+  width:100%;
   font-size: 3rem;
   overflow: scroll;
-  line-height: 1.5;
+  /* line-height: 1.5; */
+}
+
+/* seperating the text blocks */
+p {
+  padding: 2rem 0;
 }
 
 .text-input {
